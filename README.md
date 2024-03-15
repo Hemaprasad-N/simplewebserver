@@ -23,7 +23,7 @@ Testing the webserver.
 ## PROGRAM:
 ```
 from http.server import HTTPServer, BaseHTTPRequestHandler
-content = 
+content = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +38,7 @@ content =
 <li>Bootstrap</li>
 </body>
 </html>
-
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
