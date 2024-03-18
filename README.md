@@ -84,8 +84,9 @@ httpd.serve_forever()
 
 
 ## OUTPUT:
-![Screenshot (242)-1](https://github.com/Hemaprasad-N/simplewebserver/assets/135933397/8a2cbf0d-8385-4c9c-b6f5-a76da6ab75aa)
-![Screenshot (243)](https://github.com/Hemaprasad-N/simplewebserver/assets/135933397/cbe2740f-8edc-4a0e-96c0-b72642e7f5c8)
+![Screenshot (18)](https://github.com/Hemaprasad-N/simplewebserver/assets/135933397/6e78de14-b830-43e5-a5e1-55325b8c39b3)
+![Screenshot (19)](https://github.com/Hemaprasad-N/simplewebserver/assets/135933397/00b44bce-95b7-4885-9d9c-d9508013d74b)
+
 
 
 ## RESULT:
