@@ -24,19 +24,48 @@ Testing the webserver.
 ```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
-<!DOCTYPE html>
 <html>
 <head>
-<title>My webserver</title>
+<h1 align="center">SOFTWARE COMPANIES<h1>
+<title>
+TOP SOFTWARE COMPANIES WITH HIGH REVENUES
+</title>
 </head>
-<body>
-<h1><u>Languages used iun Web Development</u><h1>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Bootstrap</li>
-</body>
+<body bgcolor="cyan">
+<table border="3" align="center">
+<caption>TOP FIVE REVENUE GENERATING SOFTWARE COMPANIES</caption>
+  <tr>
+    <td>SNO</td>
+    <td>Companies</td>
+    <td>Revenue</td>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>APPLE</td>
+    <td>$385.70 B</td>
+  </tr>
+<tr>
+    <td>2.</td>
+    <td>Alphabet (Google)</td>
+    <td>$307.39 B</td>
+  </tr>
+<tr>
+    <td>3.</td>
+    <td>Microsoft</td>
+    <td>$227.58 B</td>
+  </tr>
+<tr>
+    <td>4.</td>
+    <td>IBM</td>
+    <td>$61.85 B</td>
+  </tr>
+<tr>
+    <td>5.</td>
+    <td>Oracle</td>
+    <td>$51.62 B </td>
+  </tr>
+</table>
+
 </html>
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -46,15 +75,16 @@ class myhandler(BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',80)
+server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![out1](https://github.com/vishwa2005vasu/simplewebserver/assets/135954202/9fabf446-c407-43b4-88a3-b7540b73562d)
-![out2](https://github.com/vishwa2005vasu/simplewebserver/assets/135954202/7431e7d6-2bf6-4aaf-9194-d89d25e25dec)
+![Screenshot (242)-1-1](https://github.com/vishwa2005vasu/simplewebserver/assets/135933397/2717b5c0-8fbf-4d65-9576-d08a88f95c40)
+![Screenshot (243)](https://github.com/vishwa2005vasu/simplewebserver/assets/135933397/0d73f2be-0e82-4a48-aa67-8440cb41a613)
+
 
 
 ## RESULT:
